@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <title>The Psychic Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CDN link for CSS goes here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    
+    
+    <script src="assets/javascript/game.js">
+    
+
+    </script>
+
+
+</head>
+
+<body>
+    
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <!-- Centering the h1 tag with class = "text-center" doesn't work -->
+          <h1 class="display-4">The Psychic Game</h1>  
+          <hr>
+          <!-- Separate the 'lead' class ??? -->
+          <p class="lead">Guess what letter I'm thinking of</p>
+          <p class="lead win-text">Wins: </p>
+          <p class="lead losses-text">Losses: </p>
+          <p class="lead guesses">Guess Left: </p>
+          <p class="lead userchoice-text">You Guesed so far: </p>
+        </div>
+      </div>
+
+    <script>
+
+    var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l',
+                    'm','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+    
+    // Variables tracking wins, losses, and guesses left (starts at 10)
+    var wins = 0;
+    var losses = 0;
+    var guesses = 10;
+
+    //                   (user text variable) 
+    var lowerCaseUserText = userchoice-text.toLowerCase();
+    var computerChoiceText = alphabet[Math.floor(Math.random() * alphabet.length)];
+
+    
+
+
+    </script>
+
+    <!-- Boostrap's JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

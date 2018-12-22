@@ -35,9 +35,10 @@ if(lowerCaseUserText === computerGuess){
         gameEnd();
 }
 
-if(guesses === 0){
+if(guesses === 0 || lowerCaseUserText !== computerGuess){
     losses++;
 }
+
 
 function gameEnd() {
     Swal(' Game over!');
